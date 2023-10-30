@@ -1,6 +1,7 @@
 package com.fundamentals;
 
 import com.fundamentals.lessons.Lesson4;
+import com.fundamentals.lessons.Lesson5;
 
 public class Main {
 
@@ -8,7 +9,16 @@ public class Main {
         // System.out.println("Hello Java!");
         // houseExample();
         // houseReference();
-        lesson4Example();
+        // lesson4Example();
+        lesson5Example();
+    }
+
+    public static void lesson5Example(){
+        Lesson5 myLesson5 = new Lesson5();
+        myLesson5.showLocalExample();
+        System.out.println(myLesson5.showInstanceExample());
+        myLesson5.exampleImplicit(7_536_842_983_214L);
+        myLesson5.exampleExplicit();
     }
 
     public static void  lesson4Example() {
