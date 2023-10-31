@@ -9,8 +9,8 @@ public class Main {
     public static void main(String[] args) {
         // lesson4Example();
         // lesson5Example();
-        // lesson6Example();
-        basicStatements();
+         lesson6Example();
+        // basicStatements();
     }
 
     public static void lesson6Example(){
@@ -25,6 +25,8 @@ public class Main {
         myLesson6.demoEquals();
         myLesson6.demoLogicalAnd(10, 11, 12);
         myLesson6.demoLogicalOr(13, 14, 15);
+        myLesson6.demoIncrement();
+        myLesson6.demoDecrement();
     }
 
     public static void lesson5Example(){

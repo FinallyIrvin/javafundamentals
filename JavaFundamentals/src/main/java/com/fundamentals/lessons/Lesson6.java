@@ -97,4 +97,30 @@ public class Lesson6 {
         System.out.println("Logical Operator Or " + logicAnswer);
     } // end method
 
+    /* Increment Operator */
+    public void demoIncrement() {
+        int able = 10, baker, car;
+
+        /* Post Increment - Value is computed  then incremented. */
+        baker = able++;
+        System.out.println(able); // 11
+        System.out.println(baker); // 10
+
+        /* Pre Increment - Value is incremented then computed. */
+        car = ++able;
+        System.out.println(able); // 12
+        System.out.println(car); // 12
+    } // end method
+
+    /* Decrement Operator */
+    public void demoDecrement() {
+        int tom = 10, joe, jerry;
+
+        joe = tom--;
+        System.out.println(joe); //
+
+        jerry = --tom;
+        System.out.println(jerry); //
+    } // end method
+
 } // end class
