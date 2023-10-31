@@ -2,15 +2,29 @@ package com.fundamentals;
 
 import com.fundamentals.lessons.Lesson4;
 import com.fundamentals.lessons.Lesson5;
+import com.fundamentals.lessons.Lesson6;
 
 public class Main {
 
     public static void main(String[] args) {
-        // System.out.println("Hello Java!");
-        // houseExample();
-        // houseReference();
         // lesson4Example();
-        lesson5Example();
+        // lesson5Example();
+        // lesson6Example();
+        basicStatements();
+    }
+
+    public static void lesson6Example(){
+        Lesson6 myLesson6 = new Lesson6();
+        myLesson6.demoArithmetic();
+        myLesson6.demoModulus(3);
+        myLesson6.demoMathOrder();
+        //myLesson6.demoScanner();
+        myLesson6.demoAssignment(5, 7);
+        myLesson6.demoRealtionalEquals(12, 13);
+        myLesson6.demoRelationalGreater(34, 42);
+        myLesson6.demoEquals();
+        myLesson6.demoLogicalAnd(10, 11, 12);
+        myLesson6.demoLogicalOr(13, 14, 15);
     }
 
     public static void lesson5Example(){
@@ -66,5 +80,14 @@ public class Main {
         yourHouse.doorColor = "Green";
         System.out.println(yourHouse.doorColor);
         System.out.println(otherHouse.doorColor);
-    }
+    } // end method
+
+    /* Writing Basic Statements */
+
+    public static void basicStatements() {
+        System.out.println("This is my first sentence.");
+        System.out.println("I am new to Java");
+        System.out.println("This Java course is cool.");
+        System.out.println("I am learning stuff every day.");
+    } // end method
 }
