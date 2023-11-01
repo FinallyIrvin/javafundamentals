@@ -3,14 +3,26 @@ package com.fundamentals;
 import com.fundamentals.lessons.Lesson4;
 import com.fundamentals.lessons.Lesson5;
 import com.fundamentals.lessons.Lesson6;
+import com.fundamentals.lessons.Lesson7;
 
 public class Main {
 
     public static void main(String[] args) {
         // lesson4Example();
         // lesson5Example();
-         lesson6Example();
+        // lesson6Example();
+         lesson7Example();
         // basicStatements();
+    }
+
+    public static void lesson7Example() {
+        Lesson7 myLesson7 = new Lesson7();
+        myLesson7.demoIfStatement(12,15);
+        myLesson7.demoIfElse("baseball", "baseball");
+        String result = myLesson7.demoIfElseChain(18);
+        System.out.println(result);
+        myLesson7.demoIfAndOr(28);
+        myLesson7.demoSwitch(30);
     }
 
     public static void lesson6Example(){
