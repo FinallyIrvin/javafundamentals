@@ -1,9 +1,7 @@
 package com.fundamentals;
 
-import com.fundamentals.lessons.Lesson4;
-import com.fundamentals.lessons.Lesson5;
-import com.fundamentals.lessons.Lesson6;
-import com.fundamentals.lessons.Lesson7;
+import com.fundamentals.lessons.*;
+import com.fundamentals.practice.BottlesOfBeer;
 
 public class Main {
 
@@ -11,8 +9,25 @@ public class Main {
         // lesson4Example();
         // lesson5Example();
         // lesson6Example();
-         lesson7Example();
+        // lesson7Example();
+        // lesson8Example();
         // basicStatements();
+        exampleBeer();
+    }
+
+    public static void exampleBeer() {
+        BottlesOfBeer beer = new BottlesOfBeer();
+        beer.beerSong();
+    }
+
+    public static void lesson8Example() {
+        Lesson8 myLesson8 = new Lesson8();
+        myLesson8.demoWhileLoop(15);
+        myLesson8.demoCountdown();
+        myLesson8.demoDoWhileLoop();
+        myLesson8.demoForLoop(12);
+        myLesson8.demoMultiLoop(4,6);
+        myLesson8.demoBranching();
     }
 
     public static void lesson7Example() {
