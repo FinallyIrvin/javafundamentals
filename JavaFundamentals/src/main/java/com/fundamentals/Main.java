@@ -130,7 +130,7 @@ public class Main {
     public static void stringsLabExercise() {
         StringsLab myStringLabs = new StringsLab();
         myStringLabs.taskOneToLowerCase();
-        myStringLabs.taskOneCharAt("This is my example.");
+        myStringLabs.taskOneCharAt();
         System.out.println(myStringLabs.taskOneLength());
 
         // task 2

@@ -10,8 +10,8 @@ public class StringsLab {
         System.out.println(taskOneString.toLowerCase());
     }
 
-    public void taskOneCharAt(String value) {
-        System.out.println(value.charAt(5));
+    public void taskOneCharAt() {
+        System.out.println(taskOneString.charAt(1));
     }
 
     public int taskOneLength() {
