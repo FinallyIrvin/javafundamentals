@@ -1,4 +1,28 @@
 package com.fundamentals.labs;
 
+// Task 1
+
 public class StringsLab {
+
+    String taskOneString = "This is the sentence for my example.";
+
+    public void taskOneToLowerCase() {
+        System.out.println(taskOneString.toLowerCase());
+    }
+
+    public void taskOneCharAt(String value) {
+        System.out.println(value.charAt(5));
+    }
+
+    public int taskOneLength() {
+        return taskOneString.length();
+    }
+
+    // Task 2
+
+     public String taskTwo() {
+         return "Jack and Jill went up the hill \nto fetch a pail of water.\n" +
+                 "Jack fell down and broke his crown \nand Jill came tumbling " +
+                 "after. \n";
+     }
 }

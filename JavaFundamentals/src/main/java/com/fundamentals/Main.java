@@ -1,5 +1,6 @@
 package com.fundamentals;
 
+import com.fundamentals.labs.StringsLab;
 import com.fundamentals.lessons.*;
 import com.fundamentals.practice.BottlesOfBeer;
 
@@ -12,7 +13,9 @@ public class Main {
         // lesson7Example();
         // lesson8Example();
         // basicStatements();
-        exampleBeer();
+        // exampleBeer();
+         stringsLabExercise();
+
     }
 
     public static void exampleBeer() {
@@ -119,4 +122,21 @@ public class Main {
         System.out.println("This Java course is cool.");
         System.out.println("I am learning stuff every day.");
     } // end method
+
+    //Strings Lab Exercise
+
+    // Task 1
+
+    public static void stringsLabExercise() {
+        StringsLab myStringLabs = new StringsLab();
+        myStringLabs.taskOneToLowerCase();
+        myStringLabs.taskOneCharAt("This is my example.");
+        System.out.println(myStringLabs.taskOneLength());
+
+        // task 2
+
+        String taskTwoString = myStringLabs.taskTwo();
+        System.out.println(taskTwoString);
+    }
+
 }
