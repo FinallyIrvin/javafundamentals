@@ -42,7 +42,7 @@ public class NumberLab {
         int taskThreeExample2 = (int) myFloat;
         short taskThreeExample3 = (short) myLong;
         System.out.println(taskThreeExample1);
+        System.out.println(taskThreeExample2);
         System.out.println(taskThreeExample3);
-
     }
 }
