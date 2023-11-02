@@ -6,16 +6,13 @@ public class StringsLab {
 
     String taskOneString = "This is the sentence for my example.";
 
-    public void taskOneToLowerCase() {
-        System.out.println(taskOneString.toLowerCase());
-    }
-
-    public void taskOneCharAt() {
-        System.out.println(taskOneString.charAt(1));
-    }
-
     public int taskOneLength() {
         return taskOneString.length();
+    }
+
+    public void taskOne(String word) {
+        System.out.println(word.toLowerCase());
+        System.out.println(word.charAt(1));
     }
 
     // Task 2

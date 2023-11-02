@@ -1,8 +1,10 @@
 package com.fundamentals;
 
+import com.fundamentals.labs.NumberLab;
 import com.fundamentals.labs.StringsLab;
 import com.fundamentals.lessons.*;
 import com.fundamentals.practice.BottlesOfBeer;
+import com.fundamentals.practice.Week3;
 
 public class Main {
 
@@ -14,8 +16,19 @@ public class Main {
         // lesson8Example();
         // basicStatements();
         // exampleBeer();
-         stringsLabExercise();
+        // stringsLabExercise();
+        // practiceWeek3();
+        numberLabExercise();
 
+    }
+
+    public static void practiceWeek3() {
+        Week3 week3 = new Week3();
+        String day = week3.dayOfWeek('t');
+        System.out.println(day);
+        //week3.stringLoop();
+        week3.solveProblem();
+        week3.loopPrimes();
     }
 
     public static void exampleBeer() {
@@ -123,21 +136,27 @@ public class Main {
         System.out.println("I am learning stuff every day.");
     } // end method
 
-    //Strings Lab Exercise
+    /* //Strings Lab Exercise
 
     // Task 1
 
-    public static void stringsLabExercise() {
+     public static void stringsLabExercise() {
         StringsLab myStringsLabs = new StringsLab();
-        myStringsLabs.taskOneToLowerCase();
-        myStringsLabs.taskOneCharAt();
-        System.out.println(myStringsLabs.taskOneLength());
+        myStringsLabs.taskOne();
 
         // task 2
 
         String taskTwoString = myStringsLabs.taskTwo();
         System.out.println(taskTwoString);
     } // end method
+*/
+ // Primitive Data Types Lab
+    public static void numberLabExercise() {
+        NumberLab myNumberLab = new NumberLab();
+        myNumberLab.myTaskOneExample();
+        myNumberLab.myTaskTwoExample();
+        myNumberLab.myTaskThreeExample();
+    }
 
 }
 
