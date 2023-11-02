@@ -128,15 +128,16 @@ public class Main {
     // Task 1
 
     public static void stringsLabExercise() {
-        StringsLab myStringLabs = new StringsLab();
-        myStringLabs.taskOneToLowerCase();
-        myStringLabs.taskOneCharAt();
-        System.out.println(myStringLabs.taskOneLength());
+        StringsLab myStringsLabs = new StringsLab();
+        myStringsLabs.taskOneToLowerCase();
+        myStringsLabs.taskOneCharAt();
+        System.out.println(myStringsLabs.taskOneLength());
 
         // task 2
 
-        String taskTwoString = myStringLabs.taskTwo();
+        String taskTwoString = myStringsLabs.taskTwo();
         System.out.println(taskTwoString);
-    }
+    } // end method
 
 }
+
