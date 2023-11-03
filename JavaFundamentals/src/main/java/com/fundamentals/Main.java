@@ -2,6 +2,9 @@ package com.fundamentals;
 
 import com.fundamentals.labs.NumbersLab;
 import com.fundamentals.lessons.*;
+import com.fundamentals.labs.StringsLab;
+import com.fundamentals.practice.Week3;
+import com.fundamentals.practice.BottlesOfBeer;
 
 public class Main {
 
@@ -15,25 +18,27 @@ public class Main {
         // exampleBeer();
         // stringsLabExercise();
         // practiceWeek3();
-         numbersLabExercise();
+        // numbersLabExercise();
 
     }
-
-    /*public static void practiceWeek3() {
+/*
+    public static void practiceWeek3() {
         Week3 week3 = new Week3();
         String day = week3.dayOfWeek('t');
         System.out.println(day);
         //week3.stringLoop();
         week3.solveProblem();
         week3.loopPrimes();
-    }*/
-
-    /*public static void exampleBeer() {
+    }
+ */
+/*
+    public static void exampleBeer() {
         BottlesOfBeer beer = new BottlesOfBeer();
         beer.beerSong();
-    }*/
-
-    /*public static void lesson8Example() {
+    }
+*/
+/*
+    public static void lesson8Example() {
         Lesson8 myLesson8 = new Lesson8();
         myLesson8.demoWhileLoop(15);
         myLesson8.demoCountdown();
@@ -41,9 +46,10 @@ public class Main {
         myLesson8.demoForLoop(12);
         myLesson8.demoMultiLoop(4,6);
         myLesson8.demoBranching();
-    }*/
-
-    /*public static void lesson7Example() {
+    }
+ */
+/*
+    public static void lesson7Example() {
         Lesson7 myLesson7 = new Lesson7();
         myLesson7.demoIfStatement(12,15);
         myLesson7.demoIfElse("baseball", "baseball");
@@ -51,9 +57,10 @@ public class Main {
         System.out.println(result);
         myLesson7.demoIfAndOr(28);
         myLesson7.demoSwitch(30);
-    }*/
-
-    /*public static void lesson6Example(){
+    }
+ */
+/*
+    public static void lesson6Example(){
         Lesson6 myLesson6 = new Lesson6();
         myLesson6.demoArithmetic();
         myLesson6.demoModulus(3);
@@ -67,16 +74,18 @@ public class Main {
         myLesson6.demoLogicalOr(13, 14, 15);
         myLesson6.demoIncrement();
         myLesson6.demoDecrement();
-    }*/
-
-    /*public static void lesson5Example(){
+    }
+ */
+/*
+    public static void lesson5Example(){
         Lesson5 myLesson5 = new Lesson5();
         myLesson5.showLocalExample();
         System.out.println(myLesson5.showInstanceExample());
         myLesson5.exampleImplicit(7_536_842_983_214L);
         myLesson5.exampleExplicit();
-    }*/
-
+    }
+ */
+/*
     public static void  lesson4Example() {
         Lesson4 myLesson = new Lesson4();
         myLesson.demoStrings();
@@ -93,13 +102,14 @@ public class Main {
         System.out.println(myEscape);
 
     }
+ */
 
     // This is a single comment
     /*
     * This is a multi-line comment
     * */
-
-    /*public static void houseExample() {
+/*
+    public static void houseExample() {
         House myHouse = new House();
         myHouse.foundationType = "concrete";
         myHouse.doorColor = "Red";
@@ -109,7 +119,7 @@ public class Main {
         System.out.println(myHouse.doorColor);
     }
 */
-    /*
+/*
     public static void houseReference() {
         House myHouse = new House();
         House otherHouse = new House();
@@ -124,22 +134,22 @@ public class Main {
         System.out.println(yourHouse.doorColor);
         System.out.println(otherHouse.doorColor);
     } // end method
-    */
+*/
 
     // Writing Basic Statements
-
-    /*public static void basicStatements() {
+/*
+    public static void basicStatements() {
         System.out.println("This is my first sentence.");
         System.out.println("I am new to Java");
         System.out.println("This Java course is cool.");
         System.out.println("I am learning stuff every day.");
     } // end method
-    */
+*/
 
-  /*   //Strings Lab Exercise
+     //Strings Lab Exercise
 
     // Task 1
-
+/*
      public static void stringsLabExercise() {
         StringsLab myStringsLabs = new StringsLab();
         myStringsLabs.taskOne("This is my example");
@@ -148,9 +158,9 @@ public class Main {
         String taskTwoString = myStringsLabs.taskTwo();
         System.out.println(taskTwoString);
 
-    } */ // end method
-
-
+    }  // end method
+*/
+/*
  // Primitive Data Types Lab
     public static void numbersLabExercise() {
         NumbersLab myNumbersLab = new NumbersLab();
@@ -158,5 +168,6 @@ public class Main {
         myNumbersLab.myTaskTwoExample();
         myNumbersLab.myTaskThreeExample();
     }
+*/
 }
 
