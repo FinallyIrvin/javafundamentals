@@ -6,13 +6,14 @@ public class StringsLab {
 
     String taskOneString = "This is the sentence for my example.";
 
-    public int taskOneLength() {
+    /* public int taskOneLength() {
         return taskOneString.length();
     }
-
+8*/
     public void taskOne(String word) {
         System.out.println(word.toLowerCase());
         System.out.println(word.charAt(1));
+        System.out.println(word.length());
     }
 
     // Task 2
