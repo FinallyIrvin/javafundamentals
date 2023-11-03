@@ -16,9 +16,9 @@ public class Main {
         // lesson8Example();
         // basicStatements();
         // exampleBeer();
-         stringsLabExercise();
+        // stringsLabExercise();
         // practiceWeek3();
-        // numberLabExercise();
+         numberLabExercise();
 
     }
 
@@ -139,7 +139,7 @@ public class Main {
     } // end method
     */
 
-     //Strings Lab Exercise
+  /*   //Strings Lab Exercise
 
     // Task 1
 
@@ -151,9 +151,9 @@ public class Main {
         String taskTwoString = myStringsLabs.taskTwo();
         System.out.println(taskTwoString);
 
-    } // end method
+    } */ // end method
 
-    /*
+
  // Primitive Data Types Lab
     public static void numberLabExercise() {
         NumberLab myNumberLab = new NumberLab();
@@ -161,6 +161,5 @@ public class Main {
         myNumberLab.myTaskTwoExample();
         myNumberLab.myTaskThreeExample();
     }
-*/
 }
 
