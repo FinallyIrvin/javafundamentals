@@ -1,10 +1,7 @@
 package com.fundamentals;
 
-import com.fundamentals.labs.NumberLab;
-import com.fundamentals.labs.StringsLab;
+import com.fundamentals.labs.NumbersLab;
 import com.fundamentals.lessons.*;
-import com.fundamentals.practice.BottlesOfBeer;
-import com.fundamentals.practice.Week3;
 
 public class Main {
 
@@ -18,7 +15,7 @@ public class Main {
         // exampleBeer();
         // stringsLabExercise();
         // practiceWeek3();
-         numberLabExercise();
+         numbersLabExercise();
 
     }
 
@@ -155,11 +152,11 @@ public class Main {
 
 
  // Primitive Data Types Lab
-    public static void numberLabExercise() {
-        NumberLab myNumberLab = new NumberLab();
-        myNumberLab.myTaskOneExample();
-        myNumberLab.myTaskTwoExample();
-        myNumberLab.myTaskThreeExample();
+    public static void numbersLabExercise() {
+        NumbersLab myNumbersLab = new NumbersLab();
+        myNumbersLab.myTaskOneExample();
+        myNumbersLab.myTaskTwoExample();
+        myNumbersLab.myTaskThreeExample();
     }
 }
 

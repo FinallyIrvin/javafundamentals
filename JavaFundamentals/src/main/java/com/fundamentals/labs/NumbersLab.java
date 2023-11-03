@@ -1,6 +1,6 @@
 package com.fundamentals.labs;
 
-public class NumberLab {
+public class NumbersLab {
 
     /* Task 1 */
 
@@ -9,9 +9,9 @@ public class NumberLab {
     int myOctal = 035;
 
     public void myTaskOneExample() {
-       System.out.println(myBinary);
-       System.out.println(myHexadecimal);
-       System.out.println(myOctal);
+        System.out.println(myBinary);
+        System.out.println(myHexadecimal);
+        System.out.println(myOctal);
     } // end method
 
     /* Task 2 */
@@ -21,9 +21,9 @@ public class NumberLab {
     int myInt = 22;
 
     public void myTaskTwoExample() {
-        int taskTwoExample1 = (int) myByte;
-        long taskTwoExample2 = (long) myShort;
-        float taskTwoExample3= (float) myInt;
+        int taskTwoExample1 = myByte;
+        long taskTwoExample2 = myShort;
+        float taskTwoExample3= myInt;
         System.out.println(taskTwoExample1);
         System.out.println(taskTwoExample2);
         System.out.println(taskTwoExample3);
@@ -45,3 +45,4 @@ public class NumberLab {
         System.out.println(taskThreeExample3);
     } // end method
 } // end class
+
