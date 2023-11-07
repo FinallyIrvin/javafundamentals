@@ -19,6 +19,22 @@ public class Main {
         // stringsLabExercise();
         // practiceWeek3();
         // numbersLabExercise();
+        lesson9Example();
+
+    }
+
+    public static void lesson9Example() {
+        Lesson9 mylesson9 = new Lesson9();
+        // mylesson9.demoInArray();
+         mylesson9.demoStringsArray();
+         mylesson9.demoEnhancedFor();
+         System.out.println();
+         mylesson9.demoTwoDimensions();
+        System.out.println();
+        mylesson9.demoThreeDimensional();
+        System.out.println();
+        mylesson9.demoJaggedArray();
+        System.out.println();
 
     }
 /*
