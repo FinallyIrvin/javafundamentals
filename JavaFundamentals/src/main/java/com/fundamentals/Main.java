@@ -6,6 +6,8 @@ import com.fundamentals.labs.StringsLab;
 import com.fundamentals.practice.Week3;
 import com.fundamentals.practice.BottlesOfBeer;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -19,10 +21,32 @@ public class Main {
         // stringsLabExercise();
         // practiceWeek3();
         // numbersLabExercise();
-        lesson9Example();
+        // lesson9Example();
+        lesson10Example();
 
     }
 
+    public static void lesson10Example() {
+        Lesson10 lesson10= new Lesson10();
+        // lesson10.demoArrayList();
+        // lesson10House();
+        // lesson10.demoHashSet();
+        // lesson10.demoHashMap();
+        lesson10.demoLinkedList();
+    }
+
+    public static void lesson10House() {
+        Lesson10 lesson10= new Lesson10();
+        ArrayList<House> myHouses = lesson10.houseList(4);
+        myHouses.get(0).doorColor = "Red";
+        myHouses.get(1).doorColor = "Blue";
+        myHouses.get(2).doorColor = "Yellow";
+        myHouses.get(3).doorColor = "Tan";
+        for(House mine : myHouses) {
+            System.out.println(mine.doorColor);
+        }
+    }
+/*
     public static void lesson9Example() {
         Lesson9 mylesson9 = new Lesson9();
         // mylesson9.demoInArray();
@@ -37,6 +61,7 @@ public class Main {
         System.out.println();
 
     }
+ */
 /*
     public static void practiceWeek3() {
         Week3 week3 = new Week3();
