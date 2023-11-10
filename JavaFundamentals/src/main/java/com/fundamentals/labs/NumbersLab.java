@@ -44,5 +44,16 @@ public class NumbersLab {
         System.out.println(taskThreeExample2);
         System.out.println(taskThreeExample3);
     } // end method
-} // end class
 
+    public static void main(String[] args) {
+        numbersLabExercise();
+    }
+
+        public static void numbersLabExercise() {
+            NumbersLab myNumbersLab = new NumbersLab();
+            myNumbersLab.myTaskOneExample();
+            myNumbersLab.myTaskTwoExample();
+            myNumbersLab.myTaskThreeExample();
+
+    }
+} // end class

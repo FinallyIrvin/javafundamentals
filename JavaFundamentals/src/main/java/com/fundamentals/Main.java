@@ -22,10 +22,22 @@ public class Main {
         // practiceWeek3();
         // numbersLabExercise();
         // lesson9Example();
-        lesson10Example();
+        // lesson10Example();
+        lesson11Example();
 
     }
 
+    public static void lesson11Example() {
+        Lesson11.num = 42;
+        System.out.println(Lesson11.celsiusToFahrenheit(42.6));
+        System.out.println(Lesson11.fahrenheitToCelsius(63));
+        System.out.println(Lesson11.celsiustoKelvin(50.3));
+        System.out.println(Lesson11.kelvinToCelsius(323.4));
+        System.out.println(Lesson11.fahrenheitToKelvin(59));
+        System.out.println(Lesson11.kelvinToFahrenheit(214.6));
+        System.out.println(Lesson11.num);
+    }
+/*
     public static void lesson10Example() {
         Lesson10 lesson10= new Lesson10();
         // lesson10.demoArrayList();
@@ -33,8 +45,10 @@ public class Main {
         // lesson10.demoHashSet();
         // lesson10.demoHashMap();
         lesson10.demoLinkedList();
-    }
 
+    }
+*/
+/*
     public static void lesson10House() {
         Lesson10 lesson10= new Lesson10();
         ArrayList<House> myHouses = lesson10.houseList(4);
@@ -46,6 +60,7 @@ public class Main {
             System.out.println(mine.doorColor);
         }
     }
+ */
 /*
     public static void lesson9Example() {
         Lesson9 mylesson9 = new Lesson9();
