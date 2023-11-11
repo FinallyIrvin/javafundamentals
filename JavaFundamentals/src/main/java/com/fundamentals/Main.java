@@ -15,11 +15,11 @@ public class Main {
         // lesson5Example();
         // lesson6Example();
         // lesson7Example();
-        // lesson8Example();
+         lesson8Example();
         // basicStatements();
         // exampleBeer();
         // stringsLabExercise();
-         practiceWeek3();
+        // practiceWeek3();
         // numbersLabExercise();
         // lesson9Example();
         // lesson10Example();
@@ -94,18 +94,18 @@ public class Main {
         beer.beerSong();
     }
 */
-/*
+
     public static void lesson8Example() {
         Lesson8 myLesson8 = new Lesson8();
-        myLesson8.demoWhileLoop(15);
-        myLesson8.demoCountdown();
-        myLesson8.demoDoWhileLoop();
-        myLesson8.demoForLoop(12);
-        myLesson8.demoMultiLoop(4,6);
-        myLesson8.demoBranching();
+        // myLesson8.demoWhileLoop(15);
+        // myLesson8.demoCountdown();
+         myLesson8.demoDoWhileLoop();
+        // myLesson8.demoForLoop(12);
+        // myLesson8.demoMultiLoop(4,6);
+        // myLesson8.demoBranching();
     }
- */
 
+/*
     public static void lesson7Example() {
         Lesson7 myLesson7 = new Lesson7();
         myLesson7.demoIfStatement(12,15);
@@ -115,7 +115,7 @@ public class Main {
         myLesson7.demoIfAndOr(28);
         myLesson7.demoSwitch(30);
     }
-
+*/
 /*
     public static void lesson6Example(){
         Lesson6 myLesson6 = new Lesson6();
