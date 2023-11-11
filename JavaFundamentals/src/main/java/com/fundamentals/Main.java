@@ -19,14 +19,14 @@ public class Main {
         // basicStatements();
         // exampleBeer();
         // stringsLabExercise();
-        // practiceWeek3();
+         practiceWeek3();
         // numbersLabExercise();
         // lesson9Example();
         // lesson10Example();
-        lesson11Example();
+        // lesson11Example();
 
     }
-
+/*
     public static void lesson11Example() {
         Lesson11.num = 42;
         System.out.println(Lesson11.celsiusToFahrenheit(42.6));
@@ -37,6 +37,7 @@ public class Main {
         System.out.println(Lesson11.kelvinToFahrenheit(214.6));
         System.out.println(Lesson11.num);
     }
+ */
 /*
     public static void lesson10Example() {
         Lesson10 lesson10= new Lesson10();
@@ -77,7 +78,7 @@ public class Main {
 
     }
  */
-/*
+
     public static void practiceWeek3() {
         Week3 week3 = new Week3();
         String day = week3.dayOfWeek('t');
@@ -86,7 +87,7 @@ public class Main {
         week3.solveProblem();
         week3.loopPrimes();
     }
- */
+
 /*
     public static void exampleBeer() {
         BottlesOfBeer beer = new BottlesOfBeer();
@@ -104,7 +105,7 @@ public class Main {
         myLesson8.demoBranching();
     }
  */
-/*
+
     public static void lesson7Example() {
         Lesson7 myLesson7 = new Lesson7();
         myLesson7.demoIfStatement(12,15);
@@ -114,7 +115,7 @@ public class Main {
         myLesson7.demoIfAndOr(28);
         myLesson7.demoSwitch(30);
     }
- */
+
 /*
     public static void lesson6Example(){
         Lesson6 myLesson6 = new Lesson6();

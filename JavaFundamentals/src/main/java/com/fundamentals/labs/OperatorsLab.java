@@ -6,8 +6,8 @@ public class OperatorsLab {
     public static void main(String[] args) {
         OperatorsLab myOperatorsLab = new OperatorsLab();
         myOperatorsLab.taskOne();
-         myOperatorsLab.taskTwo(10, 2);
-         myOperatorsLab.taskThree();
+        myOperatorsLab.taskTwo(10, 2);
+        myOperatorsLab.taskThree();
 
     }
 
