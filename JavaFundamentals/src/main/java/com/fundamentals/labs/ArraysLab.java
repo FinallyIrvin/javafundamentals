@@ -40,7 +40,7 @@ public class ArraysLab {
 
     public static void main(String[] args) {
         ArraysLab myArraysLab = new ArraysLab();
-        //myArraysLab.taskOne();
+        myArraysLab.taskOne();
         myArraysLab.taskTwo();
     }
 }
