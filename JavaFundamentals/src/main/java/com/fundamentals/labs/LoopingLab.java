@@ -10,15 +10,15 @@ public class LoopingLab {
     public void taskOne () {
         int count = 0;
         do{
-            if(count % 5 != 0 || count == 0){
-                System.out.println(count);
-            } if (count == 5){
-                System.out.println("Five");
-            } if (count == 10){
-                System.out.println("Ten");
-            } if (count == 15) {
-                System.out.println("Fifteen");
-            }
+                if (count == 5){
+                    System.out.println("Five");
+                } else if (count == 10){
+                    System.out.println("Ten");
+                } else if (count == 15) {
+                    System.out.println("Fifteen");
+                } else {
+                    System.out.println(count);
+                }
         count++;
         } while(count <= 15);
     }

@@ -4,7 +4,7 @@ public class ConditionsLab {
     public static void main(String[] args) {
         ConditionsLab myConditionsLab = new ConditionsLab();
         myConditionsLab.taskOne("string", "String");
-        String grade = myConditionsLab.taskTwo ('e');
+        String grade = myConditionsLab.taskTwo ('a');
         System.out.println(grade);
     }
 

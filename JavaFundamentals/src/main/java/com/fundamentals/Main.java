@@ -1,10 +1,10 @@
 package com.fundamentals;
 
+import com.fundamentals.labs.ConditionsLab;
 import com.fundamentals.labs.NumbersLab;
 import com.fundamentals.lessons.*;
 import com.fundamentals.labs.StringsLab;
-import com.fundamentals.practice.Week3;
-import com.fundamentals.practice.BottlesOfBeer;
+import com.fundamentals.practice.*;
 
 import java.util.ArrayList;
 
@@ -15,17 +15,141 @@ public class Main {
         // lesson5Example();
         // lesson6Example();
         // lesson7Example();
-         lesson8Example();
+        // lesson8Example();
         // basicStatements();
         // exampleBeer();
         // stringsLabExercise();
         // practiceWeek3();
         // numbersLabExercise();
-        // lesson9Example();
+         lesson9Example();
         // lesson10Example();
         // lesson11Example();
-
+        // Week3 week3 = new Week3();
+        // String day = week3.dayOfWeek('t');
+        // System.out.println(day);
+        //week3.stringLoop();
+        // week3.solveProblem();
+        // week3.loopPrimes();
+        //houseExampleEncapsulation();
+        // condoExample();
+        // boatExample();
+        // boatPolymorphism();
+        // speedBoatExample();
+          // polymorphismExample();
+        // abstractExample();
+        // upcastExample();
+        //lesson16Examples();
     }
+
+    public static void lesson16Examples() {
+        Lesson16 my16 = new Lesson16();
+        //my16.noLambda();
+        //my16.withLambda();
+        //my16.multipleLambda();
+        //my16.listLambda();
+        //my16.filterLambda();
+        my16.queryInfo(Lesson16.getInfo(),
+                (id -> id.getId() >= 2000));
+    }
+
+    public static void upcastExample() {
+        /* Upcasting */
+        int[] numbers = {0,1,2,3,4,5,6,7,8,9};
+        Telephone myTele = new HousePhone(5,numbers, 1, "LCP");
+        myTele.endCall();
+
+        PhoneInterface myPhone = new HousePhone(7, numbers, 1, "Color");
+        myPhone.callerID("Pizza", 1234567);
+    }
+
+    public static void abstractExample() {
+        int[] numbers = {0,1,2,3,4,5,6,7,8,9};
+        HousePhone phone = new HousePhone(5, numbers, 1, "LCD");
+        phone.receiveCall();
+        phone.sendCall();
+        System.out.println(phone.getScreen() + " " + HousePhone.HASH);
+        phone.endCall();
+        phone.callerID("Spam", 5551234);
+
+        SportsCar theCar = new SportsCar();
+        theCar.motion(99);
+        theCar.launchMode(13);
+
+        MuscleCar myCar = new MuscleCar(22, 550, "Army Green", "Round");
+        myCar.motion(105);
+        myCar.launchMode(10);
+    }
+
+    public static void polymorphismExample() {
+        House myHouse = new House();
+        myHouse.doorFunction();
+        myHouse.doorFunction("opens slowly with creaking noises.");
+        System.out.println(myHouse);
+
+        Condo myCondo = new Condo("Brick", "Steel", "Maroon", 41, "Railed");
+        myCondo.doorFunction();
+        myCondo.doorFunction("is always locked");
+        System.out.println(myCondo);
+    }
+
+    public static void boatPolymorphism() {
+        Boat myBoat = new Boat();
+        myBoat.motionFunction();
+        myBoat.motionFunction("is very big");
+        System.out.println(myBoat);
+
+        SpeedBoat mySpeedBoat = new SpeedBoat("Full", "Stockless", 54, "Electric");
+        mySpeedBoat.motionFunction();
+        mySpeedBoat.motionFunction("is very fast");
+        System.out.println(mySpeedBoat);
+    }
+/*
+    public static void speedBoatExample(){
+        SpeedBoat mySpeedBoat = new SpeedBoat("Inboard");
+        mySpeedBoat.setRudderStyle("Balanced");
+        mySpeedBoat.setAnchorType("Pool");
+        mySpeedBoat.setDeckSize(32);
+        mySpeedBoat.motionFunction();
+        mySpeedBoat.engineStartFunction();
+    }
+    */
+
+    public static void boatExample() {
+        Boat myBoat = new Boat("round", "heavy" , 24);
+        System.out.println("my boat has a " + myBoat.getRudderStyle() +
+                " rudder & a " + myBoat.getAnchorType() + " anchor");
+        myBoat.setAnchorType("Bruce");
+        System.out.println(myBoat.getAnchorType());
+
+        Boat otherBoat = new Boat("Spade", "Fob");
+        System.out.println(otherBoat.getDeckSize());
+    }
+/*
+    public static void condoExample() {
+        Condo myCondo = new Condo("Metal Railed");
+        myCondo.setDoorColor("Purple");
+        myCondo.setFoundationType("Cinder Blocks");
+        myCondo.setRoofStyle("Metal");
+        myCondo.setWindowSize(34);
+        myCondo.doorFunction();
+        // From condo
+        myCondo.maintenance();
+        Condo otherCondo = new Condo("Concrete", "Shingle", "Green", 40, "Wooden Rails");
+        System.out.println(otherCondo.getRoofStyle());
+    }
+    */
+/*
+    public static void houseExampleEncapsulation() {
+        House myHouse = new House("Concrete", "Shingle", "Green", 40);
+        System.out.println(myHouse.getFoundationType() +
+                " & " + myHouse.getDoorColor());
+        myHouse.setDoorColor("Tan");
+        System.out.println(myHouse.getDoorColor());
+
+        House otherHouse = new House("Dirt", "Mud");
+        System.out.println(otherHouse.getDoorColor());
+    }
+*/
 /*
     public static void lesson11Example() {
         Lesson11.num = 42;
@@ -53,16 +177,16 @@ public class Main {
     public static void lesson10House() {
         Lesson10 lesson10= new Lesson10();
         ArrayList<House> myHouses = lesson10.houseList(4);
-        myHouses.get(0).doorColor = "Red";
-        myHouses.get(1).doorColor = "Blue";
-        myHouses.get(2).doorColor = "Yellow";
-        myHouses.get(3).doorColor = "Tan";
+        myHouses.get(0).setDoorColor("Red");
+        myHouses.get(1).setDoorColor("Blue");
+        myHouses.get(2).setDoorColor("Yellow");
+        myHouses.get(3).setDoorColor("Tan");
         for(House mine : myHouses) {
-            System.out.println(mine.doorColor);
+            System.out.println(mine.getDoorColor());
         }
     }
- */
-/*
+*/
+
     public static void lesson9Example() {
         Lesson9 mylesson9 = new Lesson9();
         // mylesson9.demoInArray();
@@ -77,8 +201,8 @@ public class Main {
         System.out.println();
 
     }
- */
 
+/*
     public static void practiceWeek3() {
         Week3 week3 = new Week3();
         String day = week3.dayOfWeek('t');
@@ -87,14 +211,14 @@ public class Main {
         week3.solveProblem();
         week3.loopPrimes();
     }
-
+*/
 /*
     public static void exampleBeer() {
         BottlesOfBeer beer = new BottlesOfBeer();
         beer.beerSong();
     }
 */
-
+/*
     public static void lesson8Example() {
         Lesson8 myLesson8 = new Lesson8();
         // myLesson8.demoWhileLoop(15);
@@ -104,7 +228,7 @@ public class Main {
         // myLesson8.demoMultiLoop(4,6);
         // myLesson8.demoBranching();
     }
-
+*/
 /*
     public static void lesson7Example() {
         Lesson7 myLesson7 = new Lesson7();
@@ -168,12 +292,12 @@ public class Main {
 /*
     public static void houseExample() {
         House myHouse = new House();
-        myHouse.foundationType = "concrete";
-        myHouse.doorColor = "Red";
-        myHouse.roofStyle = "Shingle";
-        myHouse.windowSize = 42;
+        myHouse.setFoundationType("concrete");
+        myHouse.setDoorColor("Red");
+        myHouse.setRoofStyle("Shingle");
+        myHouse.setWindowSize(42);
         myHouse.doorFunction();
-        System.out.println(myHouse.doorColor);
+        System.out.println(myHouse.getDoorColor());
     }
 */
 /*
@@ -182,14 +306,14 @@ public class Main {
         House otherHouse = new House();
         House yourHouse = otherHouse;
 
-        myHouse.doorColor = "Red";
-        otherHouse.doorColor = "Blue";
-        System.out.println(myHouse.doorColor);
-        System.out.println(otherHouse.doorColor);
-        System.out.println(yourHouse.doorColor);
-        yourHouse.doorColor = "Green";
-        System.out.println(yourHouse.doorColor);
-        System.out.println(otherHouse.doorColor);
+        myHouse.setDoorColor("Red");
+        otherHouse.setDoorColor("Blue");
+        System.out.println(myHouse.getDoorColor());
+        System.out.println(otherHouse.getDoorColor());
+        System.out.println(yourHouse.getDoorColor());
+        yourHouse.setDoorColor("Green");
+        System.out.println(yourHouse.getDoorColor());
+        System.out.println(otherHouse.getDoorColor());
     } // end method
 */
 

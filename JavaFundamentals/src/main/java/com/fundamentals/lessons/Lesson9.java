@@ -40,7 +40,7 @@ public class Lesson9 {
                 {57,98}, {32,48} };
         for(int i = 0; i< myArray.length; i++) {
             for(int k = 0; k < myArray[i].length; k++) {
-                System.out.print(" ["+i+"]" + "["+k+"] = "+
+                System.out.print(" ["+i+"]" + "," + "["+k+"] = "+
                         myArray[i][k]);
             } // end inner for
         } // end outer for
