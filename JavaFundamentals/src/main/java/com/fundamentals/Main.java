@@ -30,7 +30,7 @@ public class Main {
         //week3.stringLoop();
         //week3.solveProblem();
         //week3.loopPrimes();
-        //houseExampleEncapsulation();
+        houseExampleEncapsulation();
         //condoExample();
         //boatExample();
         //boatPolymorphism();
@@ -169,7 +169,7 @@ public class Main {
         System.out.println(otherCondo.getRoofStyle());
     }
     */
-/*
+
     public static void houseExampleEncapsulation() {
         House myHouse = new House("Concrete", "Shingle", "Green", 40);
         System.out.println(myHouse.getFoundationType() +
@@ -180,7 +180,7 @@ public class Main {
         House otherHouse = new House("Dirt", "Mud");
         System.out.println(otherHouse.getDoorColor());
     }
-*/
+
 /*
     public static void lesson11Example() {
         Lesson11.num = 42;
