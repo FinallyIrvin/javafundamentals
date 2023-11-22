@@ -17,7 +17,7 @@ public class Lesson11 {
         num = 97;
         word = "Temperature";
         System.out.println("Static Block 1 " +
-                num + " " + word);
+                num + " " + word);;
     }
 
     static {
