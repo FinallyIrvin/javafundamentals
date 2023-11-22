@@ -11,34 +11,65 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        // lesson4Example();
-        // lesson5Example();
-        // lesson6Example();
-        // lesson7Example();
-        // lesson8Example();
-        // basicStatements();
-        // exampleBeer();
-        // stringsLabExercise();
-        // practiceWeek3();
-        // numbersLabExercise();
-         lesson9Example();
-        // lesson10Example();
-        // lesson11Example();
-        // Week3 week3 = new Week3();
-        // String day = week3.dayOfWeek('t');
-        // System.out.println(day);
+        //lesson4Example();
+        //lesson5Example();
+        //lesson6Example();
+        //lesson7Example();
+        //lesson8Example();
+        //basicStatements();
+        //exampleBeer();
+        //stringsLabExercise();
+        //practiceWeek3();
+        //numbersLabExercise();
+        //lesson9Example();
+        //lesson10Example();
+        //lesson11Example();
+        //Week3 week3 = new Week3();
+        //String day = week3.dayOfWeek('t');
+        //System.out.println(day);
         //week3.stringLoop();
-        // week3.solveProblem();
-        // week3.loopPrimes();
+        //week3.solveProblem();
+        //week3.loopPrimes();
         //houseExampleEncapsulation();
-        // condoExample();
-        // boatExample();
-        // boatPolymorphism();
-        // speedBoatExample();
-          // polymorphismExample();
-        // abstractExample();
-        // upcastExample();
+        //condoExample();
+        //boatExample();
+        //boatPolymorphism();
+        //speedBoatExample();
+        //polymorphismExample();
+        //abstractExample();
+        //upcastExample();
         //lesson16Examples();
+        lesson17Examples();
+    }
+
+    public static void lesson17Examples() {
+        // Access enum from a class
+        Lesson17 my17 = new Lesson17();
+        Lesson17.IceCreamFlavors iceCream =
+                Lesson17.IceCreamFlavors.STRAWBERRY;
+        System.out.println(iceCream);
+        System.out.println(Lesson17.IceCreamFlavors.CHOCOLATE);
+        String value = my17.myFavoriteFlavor(Lesson17.IceCreamFlavors.STRAWBERRY);
+        System.out.println(value);
+
+        // Access enum from file
+
+        DaysOfWeek myDay = DaysOfWeek.TUE;
+        System.out.println(myDay);
+        myDay.someEnumMethod();
+        System.out.println(myDay.getDay());
+        System.out.println(myDay.getDayNumber());
+
+        System.out.println();
+
+        // values()
+        DaysOfWeek[] days = DaysOfWeek.values();
+        // ordinal()
+        for(DaysOfWeek dow : days) {
+            System.out.println(dow.getDay() + " at index " + dow.ordinal());
+        }
+        // valueOf()
+        System.out.println(DaysOfWeek.valueOf("TUE"));
     }
 
     public static void lesson16Examples() {

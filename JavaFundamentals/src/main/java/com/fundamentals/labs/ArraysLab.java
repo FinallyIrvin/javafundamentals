@@ -5,7 +5,6 @@ public class ArraysLab {
 
     public void taskOne() {
         System.out.println("Task 1");
-        System.out.println();
 
         String[] iceCreamFlavors = new String[10];
         iceCreamFlavors[0] = "Vanilla";
@@ -26,8 +25,8 @@ public class ArraysLab {
     }
 
     public void taskTwo() {
-        System.out.println("Task 2");
         System.out.println();
+        System.out.println("Task 2");
 
         int[][] scoresArray = {{26, 40}, {10, 28}, {33, 28}, {30, 34}, {13, 19}, {24, 31},
                 {6, 30}, {24, 31}, {26, 23}, {35, 32}, {24, 17}, {40, 9}, {16, 23}, {23, 3},
