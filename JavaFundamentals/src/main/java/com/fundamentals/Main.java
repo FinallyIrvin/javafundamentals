@@ -30,7 +30,7 @@ public class Main {
         //week3.stringLoop();
         //week3.solveProblem();
         //week3.loopPrimes();
-        houseExampleEncapsulation();
+        //houseExampleEncapsulation();
         //condoExample();
         //boatExample();
         //boatPolymorphism();
@@ -39,7 +39,16 @@ public class Main {
         //abstractExample();
         //upcastExample();
         //lesson16Examples();
-        lesson17Examples();
+        //lesson17Examples();
+        lesson18Examples();
+    }
+
+    public static void lesson18Examples(){
+        Lesson18 my18 = new Lesson18();
+        //my18.sampleThrow(15,5);
+        //my18.exampleThrows();
+        //my18.myArrayExeption();
+        my18.exampleFinally();
     }
 
     public static void lesson17Examples() {

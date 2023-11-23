@@ -50,7 +50,12 @@ public class Television {
 
 // Task 3
     public void turnOn(){
-        System.out.println("The " + screenSize + " TV is on");
+        System.out.println("The " + screenSize + " inch TV is on");
+    }
+
+// Inheritance & Polymorphism Task 2
+    public void turnOn(String tvBrand){
+        System.out.println("The " + screenSize + " inch tv is from " + tvBrand);
     }
 
 
@@ -62,6 +67,8 @@ public class Television {
         System.out.println(myTelevision.getNumberOfPorts());
         System.out.println(myTelevision.getIsMountable());
         myTelevision.turnOn();
+        // Inheritance & Polymorphism Task 2
+        myTelevision.turnOn("Samsung");
         System.out.println();
 
         System.out.println("Constructor 2");
@@ -70,7 +77,17 @@ public class Television {
         System.out.println(otherTelevision.getPrice());
         System.out.println(otherTelevision.getNumberOfPorts());
         System.out.println(otherTelevision.getIsMountable());
-        myTelevision.turnOn();
+        otherTelevision.turnOn();
+        // Inheritance & Polymorphism Task 2
+        otherTelevision.turnOn("Samsung");
+        System.out.println();
+
+        SmartTV mySmartTV = new SmartTV(55,879.99, 4, true, "Netflix");
+        mySmartTV.turnOn("Samsung");
+
+        OLEDTV myOLEDTV = new OLEDTV(70, 1599.99, 6, true, "4K");
+        myOLEDTV.turnOn();
+
     }
 
 }
